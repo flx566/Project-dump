@@ -1,0 +1,93 @@
+body {
+ background-color: #192a46; /* Темно-синий */
+ font-family: 'Roboto', sans-serif; /* Изменил шрифт на Roboto */
+ color: #fff;
+ text-align: center;
+ padding: 20px;
+ display: flex; /* Flexbox для размещения фото и текста */
+ min-height: 100vh; /* Занимает всю высоту экрана */
+ background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Добавляем текстуру фона */
+ background-size: 300px 300px;
+}
+
+.container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 80%; /* Ограничил ширину контента */
+ margin: 0 auto; /* Выравнивание по центру */
+}
+
+h1, h2 {
+ color: #f0f0f0;
+ margin-bottom: 10px; /* Добавил отступ между заголовками */
+ text-shadow: 0 0 5px #000; /* Добавляем тень */
+}
+
+h1 {
+ font-size: 3em; /* Увеличиваем размер шрифта заголовка */
+ margin-bottom: 20px;
+}
+
+h2 {
+ font-size: 2em;
+}
+
+.photo {
+ width: 200px; /* Размер фото */
+ margin-right: 20px; /* Отступ от текста */
+ border-radius: 50%; /* Закругленные углы */
+ border: 5px solid #f0f0f0; /* Добавляем белую рамку */
+}
+
+.skills-list {
+ list-style: none;
+ padding: 0;
+ margin: 20px 0; /* Отступ от других блоков */
+ text-align: left; /* Выравниваем текст списка влево */
+}
+
+.skills-list li {
+ margin-bottom: 10px;
+ padding: 10px;
+ background-color: #283c59; /* Фон для пунктов списка */
+ border-radius: 5px;
+ border: 1px solid #f0f0f0; /* Добавляем рамку */
+ box-shadow: 0 0 5px #000; /* Добавляем тень */
+}
+
+/* Объединяем стили для кнопок */
+.telegram-button, .github-button, .portfolio-button { 
+ display: inline-block;
+ background-color: #0088cc;
+ color: #fff;
+ padding: 10px 20px;
+ text-decoration: none;
+ border-radius: 5px;
+ margin-top: 20px; 
+ margin-left: 10px; 
+ transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+/* Эффект при наведении */
+.telegram-button:hover, .github-button:hover, .portfolio-button:hover {
+ background-color: #0077b3;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.telegram-icon {
+ margin-right: 5px;
+ width: 16px;
+ height: 16px;
+}
+
+.github-icon {
+ margin-right: 5px;
+ width: 16px;
+ height: 16px;
+}
+
+.bold {
+ font-weight: bold; 
+}
